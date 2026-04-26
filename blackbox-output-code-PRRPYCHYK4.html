@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeMaster Pro - Master Trading Like a Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .gradient-card {
+            background: linear-gradient(145deg, #1e3a8a 0%, #1e40af 100%);
+        }
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .floating-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body class="font-poppins bg-gray-900 text-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-effect backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-chart-line text-2xl text-yellow-400 mr-3"></i>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+                        TradeMaster Pro
+                    </span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="hover:text-yellow-400 transition duration-300">Home</a>
+                    <a href="#about" class="hover:text-yellow-400 transition duration-300">About</a>
+                    <a href="#book" class="hover:text-yellow-400 transition duration-300">The Book</a>
+                    <a href="#testimonials" class="hover:text-yellow-400 transition duration-300">Results</a>
+                    <a href="#buy" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-8 py-2 rounded-full font-semibold hover:from-yellow-300 hover:to-orange-300 transition duration-300 shadow-lg">
+                        Get The Book Now
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-2xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden glass-effect">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 hover:text-yellow-400">Home</a>
+                <a href="#about" class="block px-3 py-2 hover:text-yellow-400">About</a>
+                <a href="#book" class="block px-3 py-2 hover:text-yellow-400">The Book</a>
+                <a href="#testimonials" class="block px-3 py-2 hover:text-yellow-400">Results</a>
+                <a href="#buy" class="block px-3 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-black rounded-full font-semibold mx-3 mt-2 text-center">Get The Book</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 gradient-bg relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+            <div class="absolute top-40 right-10 w-72 h-72 bg-orange-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
+            <div class="absolute -bottom-8 left-20 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="floating-animation mb-8">
+                <i class="fas fa-trophy text-6xl text-yellow-400 mb-6"></i>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
+                Master Trading
+                <span class="block text-transparent bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text">
+                    Like a Pro
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto text-gray-200 leading-relaxed">
+                Unlock proven strategies that turned beginners into 6-figure traders. 
+                <strong class="text-yellow-400">Limited time offer - Get instant access now!</strong>
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+                <a href="#buy" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-12 py-4 rounded-full font-bold text-xl hover:from-yellow-300 hover:to-orange-300 transition duration-300 shadow-2xl transform hover:scale-105">
+                    <i class="fas fa-bolt mr-2"></i>Get Instant Access - $47
+                </a>
+                <a href="#book" class="border-2 border-white/30 px-12 py-4 rounded-full font-semibold hover:border-white/50 transition duration-300 glass-effect">
+                    See What's Inside
+                </a>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-300">
+                <div class="flex items-center">
+                    <i class="fas fa-users text-yellow-400 mr-2"></i>
+                    <span>10,000+ Traders</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-star text-yellow-400 mr-2"></i>
+                    <span>4.9/5 Rating</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-shield-alt text-yellow-400 mr-2"></i>
+                    <span>100% Risk-Free</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Why Choose TradeMaster Pro?</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">Proven strategies from 10+ years of real market experience</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="gradient-card p-10 rounded-3xl text-center group hover:scale-105 transition duration-300 shadow-2xl">
+                    <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:rotate-12 transition duration-300">
+                        <i class="fas fa-brain text-2xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Battle-Tested Strategies</h3>
+                    <p class="text-gray-300">No theory - only strategies that made real money in live markets</p>
+                </div>
+                <div class="gradient-card p-10 rounded-3xl text-center group hover:scale-105 transition duration-300 shadow-2xl">
+                    <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:rotate-12 transition duration-300">
+                        <i class="fas fa-bolt text-2xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Instant Results</h3>
+                    <p class="text-gray-300">See profits within your first week - guaranteed setup included</p>
+                </div>
+                <div class="gradient-card p-10 rounded-3xl text-center group hover:scale-105 transition duration-300 shadow-2xl">
+                    <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:rotate-12 transition duration-300">
+                        <i class="fas fa-infinity text-2xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Lifetime Access</h3>
+                    <p class="text-gray-300">One-time payment. Lifetime updates + community access</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Content Section -->
+    <section id="book" class="py-32 bg-gradient-to-br from-gray-900 to-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="floating-animation">
+                        <div class="relative bg-gradient-to-br from-yellow-400 to-orange-500 p-2 rounded-3xl shadow-2xl max-w-sm mx-auto lg:mx-0">
+                            <div class="bg-gray-900 rounded-2xl p-8 text-center">
+                                <i class="fas fa-book-open text-6xl text-yellow-400 mb-6"></i>
+                                <h3 class="text-3xl font-bold mb-4">TradeMaster Pro</h3>
+                                <div class="w-full bg-gray-700 rounded-full h-2 mb-6">
+                                    <div class="bg-gradient-to-r from-yellow-400 to-orange-500 h-2 rounded-full w-11/12"></div>
+                                </div>
+                                <p class="text-gray-400 mb-8">278 Pages of Pure Gold</p>
+                                <div class="space-y-2 text-sm text-gray-400">
+                                    <div><i class="fas fa-check text-green-400 mr-2"></i>Day Trading Blueprint</div>
+                                    <div><i class="fas fa-check text-green-400 mr-2"></i>Swing Trading Mastery</div>
+                                    <div><i class="fas fa-check text-green-400 mr-2"></i>Risk Management</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
+                        Everything You Need
+                        <span class="block text-transparent bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text">
+                            In One Book
+                        </span>
+                    </h2>
+                    <div class="space-y-6 mb-12">
+                        <div class="flex items-start">
+                            <i class="fas fa-chart-line text-3xl text-yellow-400 mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">9 Proven Strategies</h4>
+                                <p class="text-gray-300">Scalping, momentum, breakouts, reversals - all backtested</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-3xl text-yellow-400 mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Exact Entry/Exit Rules</h4>
+                                <p class="text-gray-300">No guesswork - precise rules for every setup</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-users text-3xl text-yellow-400 mr-4 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Private Community</h4>
+                                <p class="text-gray-300">Lifetime Discord access + weekly live training</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#buy" class="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-12 py-6 rounded-3xl font-bold text-xl hover:from-yellow-300 hover:to-orange-300 transition duration-300 shadow-2xl transform hover:scale-105 block text-center">
+                        <i class="fas fa-shopping-cart mr-2"></i>Buy Now - $47 Only
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-32 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Real Results From Real Traders</h2>
+                <p class="text-xl text-gray-300">Don't take our word for it</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="gradient-card p-8 rounded-3xl glass-effect">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6">"First week using the breakout strategy - made $2,847. This book is worth 10x the price!"</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <div class="font-semibold">Mike Chen</div>
+                            <div class="text-sm text-gray-400">@miketrades</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gradient-card p-8 rounded-3xl glass-effect">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6">"Finally a system that actually works. Consistent $500-800 days now."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50&h=50&fit=crop&crop=face" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <div class="font-semibold">Sarah Lopez</div>
+                            <div class="text-sm text-gray-400">@daytrader_sarah</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gradient-card p-8 rounded-3xl glass-effect">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6">"The risk management chapter alone saved me $10k. Best investment ever."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <div class="font-semibold">David Kim</div>
+                            <div class="text-sm text-gray-400">@dk_trading</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buy Section -->
+    <section id="buy" class="py-32 gradient-bg">
+        <div class="max-w-4xl mx-auto px-4 sm:px
